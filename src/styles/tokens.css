@@ -1,0 +1,59 @@
+/*
+  Palette: cool paper, navy ink, one cobalt band, highlighter yellow, a little teal.
+  Yellow is reserved for extracted spans and the primary button; don't use it as general decoration.
+*/
+:root {
+  --paper: #f7f8fa;
+  --paper-raised: #ffffff;
+  --ink: #0e1a2b;
+  --ink-muted: #526074;
+  --rule: #dde1e8;
+  --ledger: #1d2bb8;
+  --teal: #0e7c6b;
+  --highlight: #ffd84d;
+  --highlight-ink: #0e1a2b;
+  --band: #1d2bb8;
+  --on-band: #ffffff;
+  --on-band-muted: rgb(255 255 255 / 0.78);
+  --band-rule: rgb(255 255 255 / 0.25);
+
+  --font-sans: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", monospace;
+
+  /* Type scale, ratio 1.25 from a 17px body. */
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.25rem;
+  --step-2: 1.5625rem;
+  --step-3: 1.953rem;
+  --step-hero: clamp(2.75rem, 7.5vw, 5.25rem);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --measure: 66ch;
+  --rail: 11rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0d1420;
+    --paper-raised: #141d2c;
+    --ink: #e8ecf3;
+    --ink-muted: #9aa6b8;
+    --rule: #25304a;
+    --ledger: #9aa6ff;
+    --teal: #4cc9b0;
+    --band: #16207a;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper: #0d1420;
+  --paper-raised: #141d2c;
+  --ink: #e8ecf3;
+  --ink-muted: #9aa6b8;
+  --rule: #25304a;
+  --ledger: #9aa6ff;
+  --teal: #4cc9b0;
+  --band: #16207a;
+}
